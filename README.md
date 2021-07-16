@@ -1,6 +1,6 @@
-# realstateapp
+# Real Estate Application Responsive UI
 
-A new Flutter project.
+A new Flutter Real Estate Application Responsive UI project.
 
 ## Getting Started
 
