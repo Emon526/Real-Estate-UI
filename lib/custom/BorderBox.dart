@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:realstateapp/utils/constants.dart';
 
-class BorderIcon extends StatelessWidget {
+class BorderBox extends StatelessWidget {
   final Widget child;
   final EdgeInsets padding;
   final double width, height;
 
-  const BorderIcon({
+  const BorderBox({
     Key key,
     @required this.child,
     this.padding,

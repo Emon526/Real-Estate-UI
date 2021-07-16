@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:realstateapp/custom/BorderIcon.dart';
+import 'package:realstateapp/custom/BorderBox.dart';
 import 'package:realstateapp/custom/OptionButton.dart';
+import 'package:realstateapp/screens/DetailScreen.dart';
 import 'package:realstateapp/utils/constants.dart';
 import 'package:realstateapp/utils/custom_function.dart';
 import 'package:realstateapp/utils/sample_data.dart';
@@ -29,7 +30,7 @@ class LandingScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      BorderIcon(
+                      BorderBox(
                         height: 50,
                         width: 50,
                         child: Icon(
@@ -37,7 +38,7 @@ class LandingScreen extends StatelessWidget {
                           color: COLOR_BLACK,
                         ),
                       ),
-                      BorderIcon(
+                      BorderBox(
                         height: 50,
                         width: 50,
                         child: Center(
@@ -151,7 +152,12 @@ class RealEstateItem extends StatelessWidget {
     final ThemeData themeData = Theme.of(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => DetailPage(
+                  itemData: itemData,
+                )));
+      },
       child: Container(
         margin: const EdgeInsets.symmetric(
           vertical: 20,
@@ -167,7 +173,7 @@ class RealEstateItem extends StatelessWidget {
                 Positioned(
                   top: 15,
                   right: 15,
-                  child: BorderIcon(
+                  child: BorderBox(
                     width: 50,
                     height: 50,
                     child: Icon(
