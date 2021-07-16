@@ -5,10 +5,11 @@ import 'package:realstateapp/utils/constants.dart';
 import 'package:realstateapp/utils/custom_function.dart';
 import 'package:realstateapp/utils/widget_function.dart';
 
-class DetailPage extends StatelessWidget {
+class DetailScreen extends StatelessWidget {
   final dynamic itemData;
 
-  const DetailPage({Key key, @required this.itemData}) : super(key: key);
+  const DetailScreen({Key key, @required this.itemData}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;

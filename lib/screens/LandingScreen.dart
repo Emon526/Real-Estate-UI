@@ -154,7 +154,7 @@ class RealEstateItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => DetailPage(
+            builder: (context) => DetailScreen(
                   itemData: itemData,
                 )));
       },
